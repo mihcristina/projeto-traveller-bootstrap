@@ -57,3 +57,27 @@ a:focus{
     border: 1px solid #0040EB;
 }
 
+.campo__pesquisa {
+    background-image: url(../img/img7.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 18%;
+}
+
+.campo__pesquisa label, button {
+    color: #fff;
+}
+
+.campo__pesquisa button {
+    background-color: transparent;
+    border: none;
+}
+
+.container {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.card {
+    height: 500px;
+}
