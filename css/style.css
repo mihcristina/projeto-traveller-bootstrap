@@ -33,8 +33,6 @@
 .menu__principal{
     padding-top: 0.3em;
     display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
 }
 
 .menu__principal .nav-link{
