@@ -17,10 +17,14 @@
 
 <body>
 
+    
     <!--Inicio do Cabeçalho-->
     <header>
         <section class="cabecalho">
             <a href="index.html"><img class="img__logo" src="./img/traveller-logo100.png" alt=""></a>
+            
+           
+
             <nav class="header__menu">
                 <ul class="nav justify-content-end menu">
                     <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-question-circle"></i> Ajuda</a></li>
@@ -36,6 +40,7 @@
             </nav>
         </section>
 
+    
         <nav>
             <ul class="nav justify-content-center menu__principal">
                 <a href="#" class="nav-link active">
@@ -111,6 +116,25 @@
         </nav>
     </header>
 <!--Fim do Cabeçalho-->
+
+<!--Campo reservado para a área de pesquisa-->
+
+        <!--Area de Pesquisa Cidades-->
+        <form class="formulario_pesquisa">
+            <label for="entrada">Destino:</label>
+            <input type="text" class="campo_pesquisa" id="entrada">       
+        <label for="entrada">Data de Entrada:</label>
+        <input type="date" class="campo_pesquisa" id="entrada">       
+        <label for="saida">Data de Saída</label>
+        <input type="date" class="campo_pesquisa" id="saida">     
+        <buton type="submit">Buscar</buton>
+        
+        </form>
+
+<!--Fim Area de Pesquisa Cidades-->
+
+
+
 
 
     <!--Area Reservada para imagens vida noturna, titulos e textos-->
