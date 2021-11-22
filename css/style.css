@@ -146,7 +146,9 @@ h1, h2, h3, h4, h5{
     color: #fff;
     font-size: 1.3em;
 }
-
+.card-title, .card-text, .stars {
+    text-align: center;
+}
 #destino, #email__ofertas, #email, #email__conectar, #senha{
     padding-left: 1.7em;
     background-image: url(../img/tool.png);
