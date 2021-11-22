@@ -26,6 +26,7 @@ h1, h2, h3, h4, h5{
 .menu .nav-link{
     color: #fff !important;
     padding: 0.3em;
+    font-size: 1.1em;
 }
 
 .menu .nav-link:hover{
@@ -126,7 +127,7 @@ h1, h2, h3, h4, h5{
     background-image: url(../img/img7.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 50vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -137,14 +138,16 @@ h1, h2, h3, h4, h5{
     width: 100%;
 }
 
-
 .campo__pesquisa label {
     color: #fff;
     font-size: 1.3em;
 }
 
-.botao{
-    text-align: center;
+#destino{
+    padding-left: 1.4em;
+    background-image: url(../img/black-placeholder-variant.png);
+    background-repeat: no-repeat;
+    background-position: 0.2em center;
 }
 
 .btn__busca{
@@ -153,6 +156,10 @@ h1, h2, h3, h4, h5{
 
 .btn__busca:hover{
     background-color: #406be2;
+}
+
+.buscar{
+    font-size: 1em;
 }
 
 .filtros{
@@ -169,6 +176,10 @@ h1, h2, h3, h4, h5{
     height: 500px;
 }
 
+.fa-star, .fa-star-half-alt{
+    color: #F5F300;
+    margin: auto;
+}
 
 /* rodapé */
 footer{
@@ -254,9 +265,6 @@ footer{
         font-size: 1.1em;
     }
 
-    .campo__pesquisa{
-        height: 50vh;
-    }
     .formulario__pesquisa{
         width: 70%;
     }
