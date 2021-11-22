@@ -10,17 +10,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
-    <!-- Meu CSS -->
     <link rel="stylesheet" href="css/style.css">
-    
-    <!-- Font Awesome -->
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
-
-    <!-- Favicon -->
     <link rel="shortcut icon" href="./img/traveller-logo.png" type="image/x-icon">
 
     <title>Traveller - Vida Noturna</title>
@@ -51,17 +45,15 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-expanded="false" title="Acessar">
-                            <i class="bi bi-person-circle"></i> Acessar
+                            <i class="fas fa-user"></i> Acessar
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <!-- Button trigger modal -->
                             <button type="button" class="dropdown-item" data-toggle="modal" data-target="#entrarModal">
-                                <i class="fas fa-sign-in-alt"></i>
                                 Entrar
                             </button>
                             <button type="button" class="dropdown-item" data-toggle="modal"
                                 data-target="#cadastrarModal">
-                                <i class="fas fa-user-plus"></i>
                                 Cadastrar-se
                             </button>
                         </div>
@@ -72,7 +64,7 @@
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header titulo__login">
-                                    <h5 class="modal-title text-light" id="entrarModalLabel"><i class="fas fa-sign-in-alt"></i> Entrar</h5>
+                                    <h5 class="modal-title text-light" id="entrarModalLabel">Entrar</h5>
                                     <button type="button" class="close text-light" data-dismiss="modal"
                                         aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
@@ -118,7 +110,7 @@
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header titulo__login">
-                                    <h5 class="modal-title text-light" id="cadastrarModalLabel"><i class="fas fa-user-plus"></i> Cadastrar-se</h5>
+                                    <h5 class="modal-title text-light" id="cadastrarModalLabel">Cadastrar-se</h5>
                                     <button type="button" class="close text-light" data-dismiss="modal"
                                         aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
@@ -168,7 +160,7 @@
 
                 <a href="#" class="nav-link">
                     <li class="nav-item">
-                        <i class="bi bi-info-circle-fill"></i>
+                        <i class="fas fa-info-circle"></i>
                         Dicas
                     </li>
                 </a>
@@ -215,9 +207,9 @@
                     </li>
                 </a>
 
-                <a href="#" class="nav-link" style="color: #FABE00; border-bottom: 5px solid #FABE00;
+                <a href="#" class="nav-link">
+                    <li class="nav-item selecionado" style="color: #FABE00; border-bottom: 5px solid #FABE00;
                 font-weight: bold;">
-                    <li class="nav-item selecionado">
                         <i class="fas fa-glass-cheers"></i>
                         Vida noturna<span class="sr-only">(current)</span>
                     </li>
@@ -225,7 +217,7 @@
 
                 <a href="#" class="nav-link">
                     <li class="nav-item">
-                        <i class="bi bi-boombox-fill"></i>
+                        <i class="fas fa-guitar"></i>
                         Entretenimento
                     </li>
                 </a>
@@ -240,10 +232,10 @@
         <section class="campo__pesquisa">
             <form action="" method="post" name="formulario__pesquisa" class="form-inline">
                 <div class="campo form-group">
-                    <input type="text" class="form-control mr-sm-2" id="destino" placeholder="Pesquisar Destino">
+                    <input type="text" class="form-control mr-sm-2" id="entrada" placeholder="Pesquisar Destino">
                 </div>
-                <div>
-                    <button type="submit" class="btn text-light btn__busca"><i class="fas fa-search-location buscar"></i></button>
+                <div class="botao">
+                    <button type="submit" class="btn btn-lg text-light btn__busca">Buscar</button>
                 </div>
             </form>
         </section>
@@ -251,12 +243,12 @@
         <section class="filtros mt-3 p-2">
             <form action="" method="post" name="formulario__filtro" class="form-inline justify-content-center">
                 <div class="form-group">
-                    <label for="entrada" class="mr-sm-2">Insira sua data de Viagem: </label>
+                    <label for="entrada" class="mr-sm-2">Insira sua data de Viagem</label>
                     <input type="date" class="form-control" id="entrada">
                 </div>
 
                 <div class="form-group ml-3">
-                    <label class="mr-sm-2" for="inlineFormCustomSelectPref">Tipo de Local: </label>
+                    <label class="mr-sm-2" for="inlineFormCustomSelectPref">Tipo de Local</label>
                     <select class="custom-select" id="inlineFormCustomSelectPref">
                         <option selected disabled>Selecione</option>
                         <option value="1">Bar</option>
@@ -264,7 +256,7 @@
                         <option value="3">Restaurante</option>
                         <option value="3">Outro</option>
                     </select>
-                    <button type="submit" class="btn text-light ml-sm-2">Filtrar</button>
+                    <button type="submit" class="btn text-light btn__busca ml-sm-2">Filtrar</button>
                 </div>
             </form>
         </section>
@@ -273,73 +265,73 @@
 
         <!--Area Reservada para imagens vida noturna, titulos e textos-->
         <article>
-            <div class="container my-4">
+            <div class="container">
                 <div class="row">
-                    <div class="col mb-3">
-                        <div class="card" style="width: 18rem;">
+                    <div class="col">
+                        <div class="card">
                             <img src="./img/img1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title text-center">Bar Brahma</h5>
+                                <h5 class="card-title">Bar Brahma</h5>
                                 <p class="card-text">Um dos favoritos dos intelectuais, músicos e políticos nas décadas
                                     de 50 e 60, com cerveja, lanches e música.</p>
-                                <div class="estrelas text-center">
+                                <p>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star-half-alt"></i>
-                                </div>
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-3">
-                        <div class="card" style="width: 18rem;">
+                    <div class="col">
+                        <div class="card">
                             <img src="./img/img3.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title text-center">Veloso</h5>
+                                <h5 class="card-title">Veloso</h5>
                                 <p class="card-text">Boteco animado e multipremiado, com clima carioca e várias opções
                                     de pratos, petiscos e caipirinhas famosas.</p>
-                                <div class="estrelas text-center">
+                                <p>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star-half-alt"></i>
-                                </div>
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-3">
-                        <div class="card" style="width: 18rem;">
+                    <div class="col">
+                        <div class="card">
                             <img src="./img/img4.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title text-center">D-Edge</h5>
+                                <h5 class="card-title">D-Edge</h5>
                                 <p class="card-text">Casa noturna que aprimora a experiência sensorial com iluminação
                                     elaborada, design e os hits do momento.</p>
-                                <div class="estrelas text-center">
+                                <p>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star-half-alt"></i>
-                                </div>
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-3">
-                        <div class="card" style="width: 18rem;">
+                    <div class="col">
+                        <div class="card">
                             <img src="./img/img5.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title text-center">Villa Country</h5>
+                                <h5 class="card-title">Villa Country</h5>
                                 <p class="card-text">Boate temática de faroeste com vários ambientes, música country ao
                                     vivo e grandes pistas de dança.</p>
-                                <div class="estrelas text-center">
+                                <p>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star-half-alt"></i>
-                                </div>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -358,10 +350,10 @@
 
         <address class="container__contato">
             <ul class="redes">
-                <li><a href="#" class="redes__sociais"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#" class="redes__sociais"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#" class="redes__sociais"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#" class="redes__sociais"><i class="fab fa-pinterest"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook redes__sociais"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter redes__sociais"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram redes__sociais"></i></a></li>
+                <li><a href="#"><i class="fab fa-pinterest redes__sociais"></i></a></li>
             </ul>
             <ul class="redes contato">
                 <li>
@@ -375,7 +367,7 @@
             <form action="ofertas" name="ofertas" id="ofertas" method="post" class="form-inline justify-content-center">
                 <p>Quer receber ofertas de viagens em seu email?</p>
                 <input type="email" name="email__ofertas" class="form-control mr-sm-2" id="email__ofertas" placeholder="Seu email">
-                <button type="submit" class="btn btn__busca text-light">Inscreva-se<button>
+                <button type="submit" class="btn botao__cor text-light">Inscreva-se<button>
             </form>
         </section>
 

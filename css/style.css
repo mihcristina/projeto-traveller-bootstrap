@@ -6,7 +6,6 @@
 }
 
 *:focus{
-  
     outline: 2px solid #0040EB;
 }
 
@@ -224,6 +223,14 @@ footer{
     width: 60%;
     margin: 0 auto;
     padding: 1.5em;
+}
+
+.card {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.card-img-top {
+    width: 100%;
 }
 
 @media(min-width: 350px){
