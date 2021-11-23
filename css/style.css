@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5{
     height: 250px;
 }
 
-/* cabeçalho */
+/* cabeçalho e modais*/
 .navbar, .titulo__login, footer{
     background-color: #7EA1C4;
 }
@@ -43,25 +43,13 @@ h1, h2, h3, h4, h5{
     font-size: 1.1em;
 }
 
-.menu .nav-link:hover{
+.menu .nav-link:hover, .btn, .link{
     background-color: #0040EB;
 }
 
-.btn{
-    background-color: #0040EB;
-}
-
-.btn:hover{
+.btn:hover, .link:hover{
     background-color: #003feb98;
-}
-
-.link{
-    color: #0040EB;
-}
-
-.link:hover{
     text-decoration: none;
-    color: #003feb98;
 }
 
 .primeiro{
@@ -100,7 +88,6 @@ h1, h2, h3, h4, h5{
 .menu__principal .nav-link{
     color: #666;
     text-decoration: none;
- 
 }
 
 .menu__principal .nav-link:focus{
@@ -132,10 +119,15 @@ h1, h2, h3, h4, h5{
     background-size: cover;
     background-repeat: no-repeat;
     height: 50vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.titulo{
+    font-size: 2.2em;
+    font-weight: 700;
+}
+
+.formulario__pesquisa{
+    height: 40%;
 }
 
 #destino, #email__ofertas, #email, #email__conectar, #senha{
@@ -202,22 +194,10 @@ h1, h2, h3, h4, h5{
 footer{
     text-align: center;
 }
+
 .titulo__rodape {
     font-weight: 600;
     font-size: 2em;
-}
-
-.container__contato{
-    display: flex;
-    flex-direction: column;
-}
-
-.redes{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
 }
 
 .contato {
@@ -226,21 +206,11 @@ footer{
 }
 
 .redes__sociais{
-    color: #fff;
     font-size: 1.5em;
-    margin: 0 1em;
-    font-style: normal;
-    text-decoration: none;
 }
 
 .redes__sociais:hover{
-    color: #0040EB;
     text-decoration: none;
-}
-
-.direitos, #ofertas{
-    margin: 1em 0 0;
-    font-size: 1.4em;
 }
 
 /* campo para receber ofertas */
@@ -249,15 +219,6 @@ footer{
     border-radius: 10px 30px;
     width: 90%;
     margin: 0 auto;
-    padding: 1.5em;
-}
-
-.texto__ofertas{
-    width: 100%;
-}
-
-.card-img-top {
-    width: 100%;
 }
 
 #email__ofertas, #email, #email__conectar{
@@ -271,6 +232,10 @@ footer{
 
 #senha{
     background-image: url(../img/lock.png);
+}
+
+.direitos, #ofertas {
+    font-size: 1.4em;
 }
 @media(min-width: 350px){
     .conectar__face{
