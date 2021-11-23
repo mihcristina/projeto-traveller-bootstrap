@@ -39,18 +39,29 @@ h1, h2, h3, h4, h5{
     background-color: #7EA1C4;
 }
 
+
+
 .menu .nav-link{
     color: #fff !important;
     padding: 0.3em;
     font-size: 1.1em;
 }
 
-.menu .nav-link:hover, .btn, .link{
+.menu .nav-link:hover, .btn{
     background-color: #0040EB;
 }
 
-.btn:hover, .link:hover{
+.btn:hover{
     background-color: #003feb98;
+    text-decoration: none;
+}
+
+.link{
+    color: #0040EB;
+}
+
+.link:hover{
+    color: #003feb98;
     text-decoration: none;
 }
 
@@ -140,7 +151,7 @@ h1, h2, h3, h4, h5{
 }
 
 #destino{
-    padding-left: 0.2em;
+    padding-left: 0.5em;
     width: 95%;
 }
 
@@ -238,6 +249,7 @@ footer{
 
 .direitos, #ofertas {
     font-size: 1.4em;
+  
 }
 @media(min-width: 350px){
     .conectar__face{
