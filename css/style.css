@@ -280,7 +280,7 @@ footer{
     }
     
     #entrada {
-        width: auto !important;
+        width: 60vw !important;
     }
 
     .botao__filtrar{
@@ -299,11 +299,15 @@ footer{
         width: auto;
     }
 
+    #entrada {
+        width: auto !important;
+    }
+
     .tipo__de__local {
         width: auto;
         text-align: left;
     }
-    
+
     #email__ofertas {
         width: auto;
     }
