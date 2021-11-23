@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5{
 .menu__principal .nav-link{
     color: #666;
     text-decoration: none;
-    min-width: 50vw;
+ 
 }
 
 .menu__principal .nav-link:focus{
@@ -128,7 +128,7 @@ h1, h2, h3, h4, h5{
 
 /* campos de busca */
 .campo__pesquisa {
-    background-image: url(../img/img7.jpeg);
+    background-image: url(../img/banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 50vh;
@@ -146,9 +146,7 @@ h1, h2, h3, h4, h5{
     color: #fff;
     font-size: 1.3em;
 }
-.card-title, .card-text, .stars {
-    text-align: center;
-}
+
 #destino, #email__ofertas, #email, #email__conectar, #senha{
     padding-left: 1.7em;
     background-image: url(../img/tool.png);
@@ -158,29 +156,25 @@ h1, h2, h3, h4, h5{
 }
 
 .btn__busca{
-    background-color: #0040EB;
+    background-color: #FABE00;
+    color: #0040EB;
 }
 
 .btn__busca:hover{
-    background-color: #406be2;
-}
-
-.buscar{
-    font-size: 1em;
+    background-color: #f6cf4c;
+    color: #003feb98;
 }
 
 .filtros{
     border: 1px solid #ccc;
-    width: 70%;
-    margin: auto;
 }
 /* conteúdo principal */
-.card-img-top {
-    width: 100%;
+.card{
+    background-color: #eee;
 }
 
-.card {
-    height: 500px;
+.card-img-top {
+    width: 100%;
 }
 
 .fa-star, .fa-star-half-alt{
@@ -225,18 +219,18 @@ footer{
 }
 
 /* campo para receber ofertas */
-#ofertas{
+.container__ofertas {
     background-color: #FABE00;
     border-radius: 10px 30px;
-    width: 60%;
+    width: 90%;
     margin: 0 auto;
     padding: 1.5em;
 }
 
-.card {
-    margin-top: 5%;
-    margin-bottom: 5%;
+.texto__ofertas{
+    width: 100%;
 }
+
 .card-img-top {
     width: 100%;
 }
@@ -244,6 +238,12 @@ footer{
 #email__ofertas, #email, #email__conectar{
     background-image: url(../img/o-email1.png);
 }
+
+.botao__ofertas{
+    width: 100%;
+    margin-top: 0.5em;
+}
+
 #senha{
     background-image: url(../img/lock.png);
 }
@@ -263,10 +263,20 @@ footer{
     .menu__principal .nav-link{
         min-width: 40vw;
     }
+
 }
 @media(min-width: 576px){
     .menu__principal .nav-link{
         min-width: 25vw;
+    }
+
+    #email__ofertas {
+        width: auto;
+    }
+
+    .botao__ofertas {
+        width: auto;
+        margin-top: 0;
     }
 }
 
@@ -281,6 +291,7 @@ footer{
     .menu .nav-link:hover{
         background-color: #f6cf4c;
     }
+
     .menu__principal .nav-link{
         min-width: 19vw;
         font-size: 1.1em;
@@ -288,5 +299,9 @@ footer{
 
     .formulario__pesquisa{
         width: 70%;
+    }
+
+    .container__ofertas {
+        width: 60%;
     }
 }
