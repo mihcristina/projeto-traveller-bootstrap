@@ -72,7 +72,8 @@
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header titulo__login">
-                                    <h5 class="modal-title text-light" id="entrarModalLabel"><i class="fas fa-sign-in-alt"></i> Entrar</h5>
+                                    <h5 class="modal-title text-light" id="entrarModalLabel"><i
+                                            class="fas fa-sign-in-alt"></i> Entrar</h5>
                                     <button type="button" class="close text-light" data-dismiss="modal"
                                         aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
@@ -101,8 +102,7 @@
                                         </div>
 
                                         <div class="form-group pl-1 mb-2">
-                                            <input type="submit" value="Entrar"
-                                                class="btn btn-lg text-light">
+                                            <input type="submit" value="Entrar" class="btn btn-lg text-light">
                                         </div>
                                         <div class="links p-1">
                                             <a href="#" class="link primeiro pr-2">Esqueceu a senha?</a>
@@ -118,7 +118,8 @@
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header titulo__login">
-                                    <h5 class="modal-title text-light" id="cadastrarModalLabel"><i class="fas fa-user-plus"></i> Cadastrar-se</h5>
+                                    <h5 class="modal-title text-light" id="cadastrarModalLabel"><i
+                                            class="fas fa-user-plus"></i> Cadastrar-se</h5>
                                     <button type="button" class="close text-light" data-dismiss="modal"
                                         aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
@@ -139,8 +140,7 @@
                                         </div>
 
                                         <div class="form-group pl-1 mb-2">
-                                            <input type="submit" value="Continuar"
-                                                class="btn btn-lg text-light">
+                                            <input type="submit" value="Continuar" class="btn btn-lg text-light">
                                         </div>
                                     </form>
                                 </div>
@@ -217,7 +217,7 @@
 
                 <a href="#" class="nav-link" style="color: #FABE00; border-bottom: 5px solid #FABE00;
                 font-weight: bold;">
-                    <li class="nav-item" >
+                    <li class="nav-item">
                         <i class="fas fa-glass-cheers"></i>
                         Vida noturna<span class="sr-only">(current)</span>
                     </li>
@@ -232,28 +232,34 @@
             </ul>
         </nav>
     </header>
+
     <main>
+        <!--Campo reservado para a área de pesquisa-->
+
         <!--Area de Pesquisa Cidades-->
 
         <section class="campo__pesquisa">
-            <form action="" method="post" name="formulario__pesquisa" class="form-inline justify-content-center container">
-                <div>
+            <h1 class="titulo text-center text-light pt-3">Vida Noturna</h1>
+
+            <form action="" method="post" name="formulario__pesquisa"
+                class="form-inline justify-content-center formulario__pesquisa">
+                <article>
                     <input type="text" class="form-control mr-sm-2" id="destino" placeholder="Pesquisar Destino">
-                </div>
-                <div>
+                </article>
+                <article>
                     <button type="submit" class="btn btn__busca"><i class="fas fa-search-location"></i></button>
-                </div>
+                </article>
             </form>
         </section>
 
         <section class="container filtros mt-3 p-3 my-3">
             <form action="" method="post" name="formulario__filtro" class="form-inline justify-content-center">
-                <div class="form-group cima">
+                <article class="form-group cima">
                     <label for="entrada" class="mr-sm-2">Insira a data da Viagem: </label>
                     <input type="date" class="form-control" id="entrada">
-                </div>
+                </article>
 
-                <div class="form-group ml-3">
+                <article class="form-group ml-3">
                     <label class="mr-sm-2 tipo__de__local" for="inlineFormCustomSelectPref">Tipo de Local: </label>
                     <select class="custom-select" id="inlineFormCustomSelectPref">
                         <option selected disabled>Selecione</option>
@@ -263,117 +269,119 @@
                         <option value="3">Outro</option>
                     </select>
                     <button type="submit" class="btn text-light ml-sm-2 botao__filtrar">Filtrar</button>
-                </div>
+                </article>
             </form>
         </section>
 
         <!--Fim Area de Pesquisa Cidades-->
 
         <!--Area Reservada para imagens vida noturna, titulos e textos-->
-        <article>
-            <div class="container my-4">
-                <div class="row">
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="card my-3">
-                            <img src="./img/img1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Bar Brahma</h5>
-                                <p class="card-text">Um dos favoritos dos intelectuais, músicos e políticos nas décadas
-                                    de 50 e 60, com cerveja, lanches e música.</p>
-                                <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </div>
+        <section class="container my-4">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card my-3">
+                        <img src="./img/img1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Bar Brahma</h5>
+                            <p class="card-text">Um dos favoritos dos intelectuais, músicos e políticos nas décadas
+                                de 50 e 60, com cerveja, lanches e música.</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="card my-3">
-                            <img src="./img/img3.jpg" class="card-img-top" alt="...">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Veloso</h5>
-                                <p class="card-text">Boteco animado e multipremiado, com clima carioca e várias opções
-                                    de pratos, petiscos e caipirinhas famosas.</p>
-                                <div>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card my-3">
+                        <img src="./img/img3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Veloso</h5>
+                            <p class="card-text">Boteco animado e multipremiado, com clima carioca e várias opções
+                                de pratos, petiscos e caipirinhas famosas.</p>
+                            <div>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="card my-3">
-                            <img src="./img/img4.jpg" class="card-img-top" alt="...">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">D-Edge</h5>
-                                <p class="card-text">Casa noturna que aprimora a experiência sensorial com iluminação
-                                    elaborada, design e os hits do momento.</p>
-                                <div>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card my-3">
+                        <img src="./img/img4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">D-Edge</h5>
+                            <p class="card-text">Casa noturna que aprimora a experiência sensorial com iluminação
+                                elaborada, design e os hits do momento.</p>
+                            <div>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="card my-3">
-                            <img src="./img/img5.jpg" class="card-img-top" alt="...">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Villa Country</h5>
-                                <p class="card-text">Boate temática de faroeste com vários ambientes, música country ao
-                                    vivo e grandes pistas de dança.</p>
-                                <div>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card my-3">
+                        <img src="./img/img5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Villa Country</h5>
+                            <p class="card-text">Boate temática de faroeste com vários ambientes, música country ao
+                                vivo e grandes pistas de dança.</p>
+                            <div>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </article>
+        </section>
         <!--Fim Area Reservada para imagens vida noturna, titulos e textos-->
     </main>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Inicio do Footer -->
     <footer>
-        <section class="titulo__rodape">
-            <h3>Contato</h3>
-        </section>
+        <h3 class="titulo__rodape mb-3">Contato</h3>
 
-        <address class="container__contato">
-            <ul class="redes">
-                <li><a href="#"><i class="fab fa-facebook redes__sociais"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter redes__sociais"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram redes__sociais"></i></a></li>
-                <li><a href="#"><i class="fab fa-pinterest redes__sociais"></i></a></li>
+        <address class="container__contato flex-column">
+            <ul class="row justify-content-center list-unstyled align-items-center">
+                <li><a href="#" class="redes__sociais mx-3 text-light"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#" class="redes__sociais mx-3 text-light"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" class="redes__sociais mx-3 text-light"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#" class="redes__sociais mx-3 text-light"><i class="fab fa-pinterest"></i></a></li>
             </ul>
-            <ul class="redes contato">
-                <li class="redes__sociais my-3">
+
+            <ul class="row justify-content-center list-unstyled align-items-center contato">
+                <li class="redes__sociais my-3 mx-3 text-light">
                     <i class="fas fa-phone-alt"></i> (11) 91234-5678
                 </li>
-                <li><a href="#" class="redes__sociais my-3"><i class="fas fa-envelope"></i> traveller@email.com</a></li>
+                <li>
+                    <a href="#" class="redes__sociais my-3 mx-3 text-light">
+                        <i class="fas fa-envelope"></i> traveller@email.com
+                    </a>
+                </li>
             </ul>
         </address>
 
-        <section class="container__ofertas">
+        <section class="container__ofertas my-3 p-3">
             <form action="ofertas" name="ofertas" id="ofertas" method="post" class="form-inline justify-content-center">
                 <p class="texto__ofertas">Quer receber ofertas de viagens em seu email?</p>
                 <div>
-                    <input type="email" name="email__ofertas" class="form-control mr-sm-2" id="email__ofertas" required placeholder="Seu email">
+                    <input type="email" name="email__ofertas" class="form-control mr-sm-2" id="email__ofertas" required
+                        placeholder="Seu email">
                     <input type="submit" value="Inscreva-se" class="btn botao__ofertas text-light">
                 </div>
             </form>

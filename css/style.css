@@ -28,12 +28,12 @@ h1, h2, h3, h4, h5{
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: #0040EB;
-    border-radius: 8px;
+    background-color: #03178C;
+    border-radius: 7px;
     height: 250px;
 }
 
-/* cabeçalho */
+/* cabeçalho e modais*/
 .navbar, .titulo__login, footer{
     background-color: #7EA1C4;
 }
@@ -44,25 +44,13 @@ h1, h2, h3, h4, h5{
     font-size: 1.1em;
 }
 
-.menu .nav-link:hover{
+.menu .nav-link:hover, .btn, .link{
     background-color: #0040EB;
 }
 
-.btn{
-    background-color: #0040EB;
-}
-
-.btn:hover{
+.btn:hover, .link:hover{
     background-color: #003feb98;
-}
-
-.link{
-    color: #0040EB;
-}
-
-.link:hover{
     text-decoration: none;
-    color: #003feb98;
 }
 
 .primeiro{
@@ -95,7 +83,7 @@ h1, h2, h3, h4, h5{
 }
 
 .menu__principal::-webkit-scrollbar {
-    height: 0.8em;
+    height: 0.7em;
 }
 
 .menu__principal .nav-link{
@@ -126,38 +114,46 @@ h1, h2, h3, h4, h5{
     font-weight: 900;
 }
 
-/* campos de busca */
+/* campos de destino e filtros */
 .campo__pesquisa {
     background-image: url(../img/banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 50vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.titulo{
+    font-size: 2.2em;
+    font-weight: 700;
 }
 
 .formulario__pesquisa{
-    width: 100%;
-}
-
-.campo__pesquisa label {
-    color: #fff;
-    font-size: 1.3em;
+    height: 40%;
 }
 
 #destino, #email__ofertas, #email, #email__conectar, #senha{
     padding-left: 1.7em;
-    background-image: url(../img/tool.png);
     background-repeat: no-repeat;
     background-position: 0.3em center;
     background-size: 18px;
 }
 
+#destino{
+    padding-left: 0.2em;
+    width: 95%;
+}
+
+#destino:focus{
+    outline: 2px solid #FABE00;
+}
+
 .btn__busca{
     background-color: #FABE00;
     color: #0040EB;
+}
+
+.btn__busca:focus, .botao__ofertas:focus{
+    outline: 2px solid #fff;
 }
 
 .btn__busca:hover{
@@ -168,6 +164,19 @@ h1, h2, h3, h4, h5{
 .filtros{
     border: 1px solid #ccc;
 }
+
+.cima{
+    margin-bottom: 1em !important;
+}
+
+#entrada {
+    width: 80vw !important;
+}
+
+#inlineFormCustomSelectPref{
+    width: 70% !important;
+}
+
 /* conteúdo principal */
 .card{
     background-color: #eee;
@@ -187,35 +196,22 @@ footer{
     text-align: center;
 }
 
-.container__contato{
-    display: flex;
-    flex-direction: column;
+.titulo__rodape {
+    font-weight: 600;
+    font-size: 2em;
 }
 
-.redes{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.contato {
+    flex-direction: column;
     align-items: center;
-    list-style: none;
 }
 
 .redes__sociais{
-    color: #fff;
     font-size: 1.5em;
-    margin: 0 1em;
-    font-style: normal;
-    text-decoration: none;
 }
 
 .redes__sociais:hover{
-    color: #0040EB;
     text-decoration: none;
-}
-
-.direitos, #ofertas{
-    margin: 1em 0 0;
-    font-size: 1.4em;
 }
 
 /* campo para receber ofertas */
@@ -224,28 +220,23 @@ footer{
     border-radius: 10px 30px;
     width: 90%;
     margin: 0 auto;
-    padding: 1.5em;
-}
-
-.texto__ofertas{
-    width: 100%;
-}
-
-.card-img-top {
-    width: 100%;
 }
 
 #email__ofertas, #email, #email__conectar{
     background-image: url(../img/o-email1.png);
 }
 
-.botao__ofertas{
+.botao__ofertas, .botao__filtrar{
     width: 100%;
     margin-top: 0.5em;
 }
 
 #senha{
     background-image: url(../img/lock.png);
+}
+
+.direitos, #ofertas {
+    font-size: 1.4em;
 }
 @media(min-width: 350px){
     .conectar__face{
@@ -254,20 +245,45 @@ footer{
         background-size: 1.5rem;
         background-repeat: no-repeat;
     }
+
     .conectar__google{
         background-image: url(../img/Google__G__Logo.svg.png);
         background-position: 1em center;
         background-size: 1.5em;
         background-repeat: no-repeat;
     }
+
     .menu__principal .nav-link{
         min-width: 40vw;
     }
+    
+    #entrada {
+        width: 60vw !important;
+    }
 
+    .botao__filtrar{
+        width: auto;
+        margin-top: 0;
+    }
 }
 @media(min-width: 576px){
     .menu__principal .nav-link{
         min-width: 25vw;
+    }
+    
+    #destino{
+        background-image: url(../img/tool.png);
+        padding-left: 1.7em;
+        width: auto;
+    }
+
+    #entrada {
+        width: auto !important;
+    }
+
+    .tipo__de__local {
+        width: auto;
+        text-align: left;
     }
 
     #email__ofertas {
@@ -278,6 +294,10 @@ footer{
         width: auto;
         margin-top: 0;
     }
+
+    #inlineFormCustomSelectPref {
+        width: auto !important;
+    }  
 }
 
 @media(min-width: 768px){
@@ -297,11 +317,17 @@ footer{
         font-size: 1.1em;
     }
 
-    .formulario__pesquisa{
-        width: 70%;
+    .contato {
+        flex-direction: row;
+        align-items: center;
     }
-
+    
     .container__ofertas {
         width: 60%;
+    }
+}
+@media(min-width: 992px){
+    .cima {
+        margin-bottom: 0 !important;
     }
 }
