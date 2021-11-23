@@ -238,8 +238,8 @@
         <!--Area de Pesquisa Cidades-->
 
         <section class="campo__pesquisa">
-            <form action="" method="post" name="formulario__pesquisa" class="form-inline">
-                <div class="campo form-group">
+            <form action="" method="post" name="formulario__pesquisa" class="form-inline justify-content-center container">
+                <div>
                     <input type="text" class="form-control mr-sm-2" id="destino" placeholder="Pesquisar Destino">
                 </div>
                 <div>
@@ -248,15 +248,15 @@
             </form>
         </section>
 
-        <section class="container filtros mt-3 p-2 my-3">
+        <section class="container filtros mt-3 p-3 my-3">
             <form action="" method="post" name="formulario__filtro" class="form-inline justify-content-center">
-                <div class="form-group">
+                <div class="form-group cima">
                     <label for="entrada" class="mr-sm-2">Insira a data da Viagem: </label>
                     <input type="date" class="form-control" id="entrada">
                 </div>
 
                 <div class="form-group ml-3">
-                    <label class="mr-sm-2" for="inlineFormCustomSelectPref">Tipo de Local: </label>
+                    <label class="mr-sm-2 tipo__de__local" for="inlineFormCustomSelectPref">Tipo de Local: </label>
                     <select class="custom-select" id="inlineFormCustomSelectPref">
                         <option selected disabled>Selecione</option>
                         <option value="1">Bar</option>
@@ -264,7 +264,7 @@
                         <option value="3">Restaurante</option>
                         <option value="3">Outro</option>
                     </select>
-                    <button type="submit" class="btn text-light ml-sm-2">Filtrar</button>
+                    <button type="submit" class="btn text-light ml-sm-2 botao__filtrar">Filtrar</button>
                 </div>
             </form>
         </section>
@@ -364,10 +364,10 @@
                 <li><a href="#"><i class="fab fa-pinterest redes__sociais"></i></a></li>
             </ul>
             <ul class="redes contato">
-                <li>
-                    <p class="redes__sociais"><i class="fas fa-phone-alt"></i>(11) 91234-5678</p>
+                <li class="redes__sociais my-3">
+                    <i class="fas fa-phone-alt"></i> (11) 91234-5678
                 </li>
-                <li><a href="#" class="redes__sociais"><i class="fas fa-envelope"></i> traveller@email.com</a></li>
+                <li><a href="#" class="redes__sociais my-3"><i class="fas fa-envelope"></i> traveller@email.com</a></li>
             </ul>
         </address>
 
