@@ -150,9 +150,17 @@ h1, h2, h3, h4, h5{
     width: 95%;
 }
 
+#destino:focus{
+    outline: 2px solid #FABE00;
+}
+
 .btn__busca{
     background-color: #FABE00;
     color: #0040EB;
+}
+
+.btn__busca:focus, .botao__ofertas:focus{
+    outline: 2px solid #fff;
 }
 
 .btn__busca:hover{
@@ -193,6 +201,10 @@ h1, h2, h3, h4, h5{
 /* rodapé */
 footer{
     text-align: center;
+}
+.titulo__rodape {
+    font-weight: 600;
+    font-size: 2em;
 }
 
 .container__contato{
