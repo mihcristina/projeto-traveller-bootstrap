@@ -1,83 +1,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-*:focus{
+*:focus {
     outline: 2px solid #0040EB;
 }
 
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5{
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Roboto', sans-serif;
 }
 
 /* barra de rolagem */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 0.5em;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
     background-color: #7EA1C4;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background-color: #03178C;
     border-radius: 7px;
     height: 250px;
 }
 
 /* cabeçalho e modais*/
-.navbar, .titulo__login, footer{
+.navbar,
+.titulo__login,
+footer {
     background-color: #7EA1C4;
 }
 
-.menu .nav-link{
+
+
+.menu .nav-link {
     color: #fff !important;
     padding: 0.3em;
     font-size: 1.1em;
 }
 
-.menu .nav-link:hover, .btn, .link{
+.menu .nav-link:hover,
+.btn {
     background-color: #0040EB;
 }
 
-.btn:hover, .link:hover{
+.btn:hover {
     background-color: #003feb98;
     text-decoration: none;
 }
 
-.primeiro{
+.link:hover {
+    color: #003feb98 !important;
+    text-decoration: none;
+}
+
+.primeiro {
     border-right: 1px solid #0040EB;
 }
 
-.conectar__face{
-    background-color: #3664a2;
-    color: #fff;
+.conectar__face:hover {
+    background-color: #4b7ec2 !important;
 }
 
-.conectar__face:hover{
-    background-color: #4b7ec2;
-    color: #fff;
-}
-
-.conectar__google{
-    background-color: #ddd;
-}
-
-.conectar__google:hover{
-    background-color: #ccc;
+.conectar__google:hover {
+    background-color: #ccc !important;
 }
 
 /* menu principal */
-.menu__principal{
+.menu__principal {
     padding-top: 0.3em;
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -87,12 +92,12 @@ h1, h2, h3, h4, h5{
     height: 0.7em;
 }
 
-.menu__principal .nav-link{
+.menu__principal .nav-link {
     color: #666;
     text-decoration: none;
 }
 
-.menu__principal .nav-link:focus{
+.menu__principal .nav-link:focus {
     margin: 0 0.2rem;
     outline: none;
     font-weight: 600;
@@ -100,7 +105,7 @@ h1, h2, h3, h4, h5{
     color: #0040EB;
 }
 
-.menu__principal .nav-item{
+.menu__principal .nav-item {
     width: 100%;
     height: 100%;
     display: flex;
@@ -109,7 +114,7 @@ h1, h2, h3, h4, h5{
     align-items: center;
 }
 
-.menu__principal .nav-link:hover{
+.menu__principal .nav-link:hover {
     background-color: #eee;
     color: #0040EB;
     font-weight: 900;
@@ -123,77 +128,78 @@ h1, h2, h3, h4, h5{
     height: 50vh;
 }
 
-.titulo{
+.titulo {
     font-size: 2.2em;
     font-weight: 700;
 }
 
-.formulario__pesquisa{
+.formulario__pesquisa {
     height: 40%;
 }
 
-#destino, #email__ofertas, #email, #email__conectar, #senha{
+#destino,
+#email__ofertas,
+#email,
+#email__conectar,
+#senha {
     padding-left: 1.7em;
     background-repeat: no-repeat;
     background-position: 0.3em center;
     background-size: 18px;
 }
 
-#destino{
-    padding-left: 0.2em;
+#destino {
+    padding-left: 0.5em;
     width: 95%;
 }
 
-#destino:focus{
+#destino:focus {
     outline: 2px solid #FABE00;
 }
 
-.btn__busca{
+.btn__busca {
     background-color: #FABE00;
     color: #0040EB;
 }
 
-.btn__busca:focus, .botao__ofertas:focus{
+.btn__busca:focus,
+.botao__ofertas:focus {
     outline: 2px solid #fff;
 }
 
-.btn__busca:hover{
+.btn__busca:hover {
     background-color: #f6cf4c;
     color: #003feb98;
 }
 
-.filtros{
+.filtros {
     border: 1px solid #ccc;
 }
 
-.cima{
+.cima {
     margin-bottom: 1em !important;
 }
 
-#entrada {
+#data {
     width: 80vw !important;
 }
 
-#inlineFormCustomSelectPref{
+#inlineFormCustomSelectPref {
     width: 70% !important;
 }
 
 /* conteúdo principal */
-.card{
-    background-color: #eee;
-}
-
 .card-img-top {
     width: 100%;
 }
 
-.fa-star, .fa-star-half-alt{
+.fa-star,
+.fa-star-half-alt {
     color: #F5F300;
-    margin: auto;
 }
 
 /* rodapé */
-footer{
+footer {
     text-align: center;
 }
 
@@ -207,11 +213,11 @@ footer{
     align-items: center;
 }
 
-.redes__sociais{
+.redes__sociais {
     font-size: 1.5em;
 }
 
-.redes__sociais:hover{
+.redes__sociais:hover {
     text-decoration: none;
 }
 
@@ -223,62 +229,69 @@ footer{
     margin: 0 auto;
 }
 
-#email__ofertas, #email, #email__conectar{
+#email__ofertas,
+#email,
+#email__conectar {
     background-image: url(../img/o-email1.png);
 }
 
-.botao__ofertas, .botao__filtrar{
+.botao__ofertas,
+.botao__filtrar {
     width: 100%;
     margin-top: 0.5em;
 }
 
-#senha{
+#senha {
     background-image: url(../img/lock.png);
 }
 
-.direitos, #ofertas {
+.direitos,
+#ofertas {
     font-size: 1.4em;
+
 }
-@media(min-width: 350px){
-    .conectar__face{
+
+@media(min-width: 350px) {
+    .conectar__face {
         background-image: url(../img/facebook-icon.png);
         background-position: 1em center;
         background-size: 1.5rem;
         background-repeat: no-repeat;
     }
 
-    .conectar__google{
+    .conectar__google {
         background-image: url(../img/Google__G__Logo.svg.png);
         background-position: 1em center;
         background-size: 1.5em;
         background-repeat: no-repeat;
     }
 
-    .menu__principal .nav-link{
+    .menu__principal .nav-link {
         min-width: 40vw;
     }
-    
-    #entrada {
+
+    #data {
         width: 60vw !important;
     }
 
-    .botao__filtrar{
+    .botao__filtrar {
         width: auto;
         margin-top: 0;
     }
 }
-@media(min-width: 576px){
-    .menu__principal .nav-link{
+
+@media(min-width: 576px) {
+    .menu__principal .nav-link {
         min-width: 25vw;
     }
-    
-    #destino{
+
+    #destino {
         background-image: url(../img/tool.png);
         padding-left: 1.7em;
         width: auto;
     }
 
-    #entrada {
+    #data {
         width: auto !important;
     }
 
@@ -298,22 +311,22 @@ footer{
 
     #inlineFormCustomSelectPref {
         width: auto !important;
-    }  
+    }
 }
 
-@media(min-width: 768px){
-    .menu .nav-link{
+@media(min-width: 768px) {
+    .menu .nav-link {
         background-color: #FABE00;
         color: #0040EB !important;
         margin: 0 0.1em;
         border-radius: 30px 10px;
     }
-    
-    .menu .nav-link:hover{
+
+    .menu .nav-link:hover {
         background-color: #f6cf4c;
     }
 
-    .menu__principal .nav-link{
+    .menu__principal .nav-link {
         min-width: 19vw;
         font-size: 1.1em;
     }
@@ -322,12 +335,13 @@ footer{
         flex-direction: row;
         align-items: center;
     }
-    
+
     .container__ofertas {
         width: 60%;
     }
 }
-@media(min-width: 992px){
+
+@media(min-width: 992px) {
     .cima {
         margin-bottom: 0 !important;
     }
