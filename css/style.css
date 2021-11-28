@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap');
 
+:root {
+    --cor0: #0040EB;
+    --cor1: #7EA1C4;
+    --cor2: #FABE00;
+    --cor3: #F5F300;
+    --cor4: #0CE66C;
+
+    --fonte-titulos: 'Roboto', sans-serif;
+    --fonte-padrao: 'Poppins', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,11 +18,15 @@
 }
 
 *:focus {
-    outline: 2px solid #0040EB;
+    outline: 2px solid var(--cor0);
+}
+
+*::selection{
+    background-color: var(--cor1);
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--fonte-padrao);
 }
 
 h1,
@@ -19,7 +34,7 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--fonte-titulos);
 }
 
 /* barra de rolagem */
@@ -28,7 +43,7 @@ h5 {
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #7EA1C4;
+    background-color: var(--cor1);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -41,7 +56,7 @@ h5 {
 .navbar,
 .titulo__login,
 footer {
-    background-color: #7EA1C4;
+    background-color: var(--cor1);
 }
 
 .menu .nav-link {
@@ -52,7 +67,7 @@ footer {
 
 .menu .nav-link:hover,
 .btn {
-    background-color: #0040EB;
+    background-color: var(--cor0);
 }
 
 .btn:hover {
@@ -66,7 +81,7 @@ footer {
 }
 
 .primeiro {
-    border-right: 1px solid #0040EB;
+    border-right: 1px solid var(--cor0);
 }
 
 .conectar__face:hover {
@@ -100,7 +115,7 @@ footer {
 
 .link__box:hover {
     background-color: #eee;
-    color: #0040EB;
+    color: var(--cor0);
     font-weight: 900;
     text-decoration: none;
 }
@@ -110,7 +125,7 @@ footer {
     outline: none;
     font-weight: 600;
     box-shadow: 0px -1px 3px #000;
-    color: #0040EB;
+    color: var(--cor0);
 }
 
 .box {
@@ -155,11 +170,11 @@ footer {
 }
 
 #destino:focus {
-    outline: 2px solid #FABE00;
+    outline: 2px solid var(--cor2);
 }
 
 .btn__busca {
-    background-color: #FABE00;
+    background-color: var(--cor2);
     color: #0040EB;
 }
 
@@ -199,7 +214,7 @@ footer {
 
 .fa-star,
 .fa-star-half-alt {
-    color: #F5F300;
+    color: var(--cor3);
     font-size: 1.2em;
 }
 
@@ -228,7 +243,7 @@ footer {
 
 /* campo para receber ofertas */
 .container__ofertas {
-    background-color: #FABE00;
+    background-color: var(--cor2);
     border-radius: 10px 30px;
     width: 90%;
     margin: 0 auto;
@@ -321,8 +336,8 @@ footer {
 
 @media(min-width: 768px) {
     .menu .nav-link {
-        background-color: #FABE00;
-        color: #0040EB !important;
+        background-color: var(--cor2);
+        color: var(--cor0) !important;
         margin: 0 0.1em;
         border-radius: 30px 10px;
     }
