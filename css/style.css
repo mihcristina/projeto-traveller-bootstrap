@@ -149,11 +149,36 @@ footer {
     font-weight: 700;
 }
 
-.formulario__pesquisa {
+.formulario {
     height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#destino,
+.busca {
+    background-color: #fff;
+    border-radius: 15px;
+    display: inline-block;
+    padding: 10px;
+}
+
+.busca>input {
+    border: none;
+    padding-left: 5px;
+}
+
+.busca>input:focus {
+    outline: none;
+}
+
+.busca>button {
+    border: none;
+    color: #666;
+    padding: 5px;
+    background-color: transparent;
+}
+
 #email__ofertas,
 #email,
 #email__conectar,
@@ -162,30 +187,6 @@ footer {
     background-repeat: no-repeat;
     background-position: 0.3em center;
     background-size: 18px;
-}
-
-#destino {
-    padding-left: 0.5em;
-    width: 95%;
-}
-
-#destino:focus {
-    outline: 2px solid var(--cor2);
-}
-
-.btn__busca {
-    background-color: var(--cor2);
-    color: #0040EB;
-}
-
-.btn__busca:focus,
-.botao__ofertas:focus {
-    outline: 2px solid #fff;
-}
-
-.btn__busca:hover {
-    background-color: #f6cf4c;
-    color: #003feb98;
 }
 
 .filtros {
@@ -202,6 +203,10 @@ footer {
 
 #inlineFormCustomSelectPref {
     width: 70% !important;
+}
+
+.botao__ofertas:focus {
+    outline: 2px solid #fff;
 }
 
 /* conteúdo principal */
@@ -234,7 +239,7 @@ footer {
 }
 
 .redes__sociais {
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 .redes__sociais:hover {
@@ -298,17 +303,15 @@ footer {
         width: auto;
         margin-top: 0;
     }
+
+    .redes__sociais {
+        font-size: 1.5em;
+    }
 }
 
 @media(min-width: 576px) {
     .link__box {
         min-width: 25vw;
-    }
-
-    #destino {
-        background-image: url(../img/tool.png);
-        padding-left: 1.7em;
-        width: auto;
     }
 
     #data {
