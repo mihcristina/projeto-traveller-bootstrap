@@ -41,8 +41,8 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto menu">
                     <li class="nav-item">
-                        <a class="nav-link" href="#" title="Ajuda">
-                            <i class="fas fa-question-circle"></i> Ajuda
+                        <a href="#" class="button-acessibilidade nav-link" onclick="dark_mode()">
+                            <i class="fas fa-moon"></i> Dark Mode
                         </a>
                     </li>
                     <li class="nav-item dropdown">
@@ -82,24 +82,24 @@
                                     <form action="" method="post">
                                         <div class="form-group px-1">
                                             <label for="email">E-mail:</label>
-                                            <input type="email" name="email" class="form-control" id="email" required
-                                                placeholder="Seu email">
+                                            <input type="email" name="email" class="form-control input" id="email"
+                                                required placeholder="Seu email">
                                         </div>
 
                                         <div class="form-group px-1">
                                             <label for="senha">Senha:</label>
-                                            <input type="password" name="senha" class="form-control" id="senha" required
-                                                minlength="8" maxlength="10" placeholder="Sua senha">
+                                            <input type="password" name="senha" class="form-control input" id="senha"
+                                                required minlength="8" maxlength="10" placeholder="Sua senha">
                                         </div>
 
                                         <div class="form-group form-check ml-2">
-                                            <input type="checkbox" checked class="form-check-input" name="conectado"
-                                                id="conectado">
+                                            <input type="checkbox" checked class="form-check-input input"
+                                                name="conectado" id="conectado">
                                             <label for="conectado">Deseja manter-se conectado?</label>
                                         </div>
 
                                         <div class="form-group pl-1 mb-2">
-                                            <input type="submit" value="Entrar" class="btn btn-lg text-light">
+                                            <input type="submit" value="Entrar" class="btn btn-lg text-light input">
                                         </div>
                                         <div class="links p-1">
                                             <a href="#" class="link primeiro pr-2" style="color: #0040EB;">Esqueceu a
@@ -126,29 +126,29 @@
                                 </div>
                                 <div class="modal-body">
                                     <form action="" method="post">
-                                        <a href="#" class="btn btn-block conectar__face rounded-pill my-2"
+                                        <a href="#" class="btn btn-block conectar__face rounded-pill my-2 input"
                                             style="background-color: #3664a2; color: #fff;">
                                             Conecte-se com o Facebook
                                         </a>
-                                        <a href="#" class="btn btn-block conectar__google rounded-pill my-2"
-                                            style="background-color: #ddd;">
+                                        <a href="#" class="btn btn-block conectar__google rounded-pill my-2 input"
+                                            style="background-color: #ddd; color: #000 !important;">
                                             Conecte-se com o Google
                                         </a>
                                         <div class="form-group px-1 pt-3">
                                             <label for="email__conectar">E-mail:</label>
-                                            <input type="email" name="email__conectar" class="form-control"
+                                            <input type="email" name="email__conectar" class="form-control input"
                                                 id="email__conectar" required placeholder="Seu email">
                                         </div>
 
                                         <div class="form-group pl-1 mb-2">
-                                            <input type="submit" value="Continuar" class="btn btn-lg text-light">
+                                            <input type="submit" value="Continuar" class="btn btn-lg text-light input">
                                         </div>
                                     </form>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
                     <li class="nav-item">
                         <a class="nav-link" href="#" title="Minhas Viagens">
                             <i class="fas fa-suitcase-rolling"></i> Minhas Viagens
@@ -218,8 +218,7 @@
                     </li>
                 </a>
 
-                <a href="#" class="link__box" style="color: #FABE00; border-bottom: 5px solid #FABE00;
-                font-weight: bold;">
+                <a href="#" class="link__box selecionado">
                     <li class="box">
                         <i class="fas fa-glass-cheers"></i>
                         Vida noturna
@@ -247,7 +246,7 @@
 
             <form action="/" method="post" name="formulario__pesquisa" class="formulario">
                 <div class="busca">
-                    <input type="text" name="destino" id="destino" placeholder="Pesquisar Destino">
+                    <input type="search" name="destino" id="destino" placeholder="Pesquisar Destino">
                     <button type="submit"><i class="fas fa-search-location"></i></button>
                 </div>
             </form>
@@ -259,30 +258,30 @@
             <form action="" method="post" name="formulario__filtro" class="form-inline justify-content-center">
                 <article class="form-group cima">
                     <label for="data" class="mr-sm-2">Insira a data da Viagem: </label>
-                    <input type="date" class="form-control" id="data">
+                    <input type="date" class="form-control input" id="data">
                 </article>
 
                 <article class="form-group ml-3">
                     <label class="mr-sm-2 tipo__de__local" for="inlineFormCustomSelectPref">Tipo de Local: </label>
-                    <select class="custom-select" id="inlineFormCustomSelectPref">
+                    <select class="custom-select input" id="inlineFormCustomSelectPref">
                         <option selected disabled>Selecione</option>
                         <option value="1">Bar</option>
                         <option value="2">Balada</option>
                         <option value="3">Restaurante</option>
                         <option value="3">Outro</option>
                     </select>
-                    <button type="submit" class="btn text-light ml-sm-2 botao__filtrar">Filtrar</button>
+                    <button type="submit" class="btn text-light ml-sm-2 botao__filtrar input">Filtrar</button>
                 </article>
             </form>
         </section>
         <!--Fim da Area de Filtros -->
 
         <!--Area Reservada para imagens vida noturna, titulos e textos-->
-        <section class="container my-4">
+        <section class="container-fluid my-4">
             <div class="row">
 
                 <!-- primeiro card -->
-                <div class="col-12 col-md-6 col-xl-3 my-2">
+                <div class="col-12 col-sm-6 col-xl-3 my-2">
                     <div class="card">
                         <picture>
                             <source media="(min-width: 1200px)" srcset="./img/bar-brahma-300.jpg" type="image/jpg">
@@ -306,7 +305,7 @@
                 <!-- Fim do primeiro card -->
 
                 <!-- segundo card -->
-                <div class="col-12 col-md-6 col-xl-3 my-2">
+                <div class="col-12 col-sm-6 col-xl-3 my-2">
                     <div class="card">
                         <picture>
                             <source media="(min-width: 1200px)" srcset="./img/veloso-300.jpg" type="image/jpg">
@@ -330,7 +329,7 @@
                 <!-- Fim do segundo card -->
 
                 <!-- terceiro card -->
-                <div class="col-12 col-md-6 col-xl-3 my-2">
+                <div class="col-12 col-sm-6 col-xl-3 my-2">
                     <div class="card">
                         <picture>
                             <source media="(min-width: 1200px)" srcset="./img/d-edge-300.jpg" type="image/jpg">
@@ -354,7 +353,7 @@
                 <!-- Fim do terceiro card -->
 
                 <!-- quarto card -->
-                <div class="col-12 col-md-6 col-xl-3 my-2">
+                <div class="col-12 col-sm-6 col-xl-3 my-2">
                     <div class="card">
                         <picture>
                             <source media="(min-width: 1200px)" srcset="./img/villa-country-300.jpg" type="image/jpg">
@@ -414,7 +413,7 @@
                 <div>
                     <input type="email" name="email__ofertas" class="form-control mr-sm-2" id="email__ofertas" required
                         placeholder="Seu email">
-                    <input type="submit" value="Inscreva-se" class="btn botao__ofertas text-light">
+                    <input type="submit" value="Inscreva-se" class="btn botao__ofertas text-light input">
                 </div>
             </form>
         </section>
@@ -444,6 +443,16 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+    </script>
+    <script>
+        function dark_mode() {
+            debugger;
+            if ($("#dark-mode").length > 0) {
+                $("#dark-mode").remove();
+            } else {
+                $("body").append('<link type="text/css" id="dark-mode" rel="stylesheet" href="./css/dark.css">');
+            }
+        }
     </script>
 </body>
 
