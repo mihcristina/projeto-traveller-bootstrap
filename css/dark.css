@@ -17,6 +17,19 @@
     background-color: var(--cor0);
 }
 
+.pular {
+    background-color: var(--dark1);
+}
+
+.pular a{
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+.pular a:hover {
+    background-color: var(--dark2);
+}
+
 body,
 .navbar,
 footer,
@@ -30,6 +43,14 @@ footer,
 .menu .nav-link:hover,
 .link__box:hover {
     background-color: var(--dark2) !important;
+}
+
+.dropdown-menu.show {
+    background-color: var(--dark1);
+}
+
+.dropdown-item {
+    color: #fff;
 }
 
 .modal-content input,

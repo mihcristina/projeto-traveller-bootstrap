@@ -18,12 +18,39 @@
 }
 
 *:focus,
-.button-acessibilidade:focus {
+.button-acessibilidade:focus, .pular a:focus {
     outline: 2px solid var(--cor0);
 }
 
 *::selection {
     background-color: var(--cor1);
+}
+
+.esconder__acessibilidade {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    border: 0;
+    display: none;
+}
+
+.pular {
+    background-color: var(--cor1);
+    padding: 3px 0;
+}
+
+.pular a{
+    background-color: var(--cor2);
+    font-weight: 600;
+    color: var(--cor0);
+    border-radius: 8px;
+}
+
+.pular a:hover {
+    color: #fff;
 }
 
 body {
@@ -69,6 +96,10 @@ footer {
     padding: 0.3em;
     font-size: 1.1em;
     margin-bottom: 0.3em;
+}
+
+.dropdown-menu.show {
+    background-color: var(--cor2);
 }
 
 .menu .nav-link:hover,
